@@ -1,0 +1,91 @@
+//imports
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Roboto:100,300,400,700');
+@import (inline)url(../css/additional/reset.css);
+@import "mixins";
+@import "page";
+@import "header";
+@import "headings";
+@import "homepage";
+@import "carousel";
+@import "mask";
+@import "about";
+@import "portfolio";
+@import "portfolio-details";
+@import "blog";
+@import "post";
+@import "single-post";
+@import "contact";
+@import "footer";
+@font-face {
+  font-family: 'slick';
+  src: url('../fonts/slick.woff') format('woff'),
+  url('../fonts/slick.eot') format('eot'),
+  url('../fonts/slick.svg') format('svg'),
+  url('../fonts/slick.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'glyphicon';
+  src: url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+  url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+  url('../fonts/glyphicons-halflings-regular.eot') format('eot'),
+  url('../fonts/glyphicons-halflings-regular.svg') format('svg'),
+  url('../fonts/glyphicons-halflings-regular.ttf') format('truetype');
+}
+
+
+//variables
+@white: #ffffff;
+@darkwhite: #fafafa;
+@grey: #777777;
+@lightgrey: #959595;
+@black: #000000;
+
+//mixins
+
+//code
+body {
+  font-family: 'Roboto', sans-serif;
+}
+main {
+  background: @darkwhite;
+}
+.container {
+  padding: 0;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+.blog__aside--tagsBlack {
+  background: black;
+  color: white;
+  outline: none;
+}
+.blog__post--red {
+  color: red;
+}
+.show__menu {
+  display: block;
+}
+.hide {
+  display: none;
+}
+video {
+  height: 100%;
+  width: 100%;
+}
+
+span.found {
+  background-color: darkviolet;
+  cursor: pointer;
+}
+
+span.next {
+  color: darkred;
+  cursor: pointer;
+}

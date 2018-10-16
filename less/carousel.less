@@ -1,0 +1,49 @@
+.carousel {
+  &__text {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-weight: 300;
+    &--title {
+      color:  @white;
+      font-size: 48px;
+      text-align: center;
+      background: @black;
+      width: 75%;
+      margin-bottom: 3%;
+    }
+    &--subtitle {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  &__arrow {
+    &--prev {
+      left: 8.5%;
+      .slider__arrows;
+    }
+    &--next {
+      right: 8.5%;
+      .slider__arrows;
+    }
+  }
+  &__dots {
+    bottom: 8.2%;
+    & li button:before {
+      content: '';
+      background-color: @white;
+      width: 15px;
+      height: 14px;
+      border-radius: 50%;
+      border: 5px solid @white;
+      opacity: 1;
+    }
+  }
+  &__dots li.slick-active button:before {
+    border-color: @black;
+  }
+}

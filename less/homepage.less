@@ -1,0 +1,105 @@
+.home{
+  &__carousel {
+    &--slider {
+      position: relative;
+      height: 80vh;
+    }
+    &--slider1 {
+      background: url("../img/home/slider_1_bg.jpg") no-repeat 100%;
+      background-size: cover;
+    }
+    &--slider2 {
+      background: url("../img/home/slider_2_bg.jpg") no-repeat 100%;
+      background-size: cover;
+    }
+    &--slider3 {
+      background: @grey;
+    }
+  }
+  &__filtration {
+    border-top: 1px solid @lightgrey;
+    border-bottom: 1px solid @lightgrey;
+    margin: 1% 0;
+  }
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    &--button {
+      color: @grey;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      position: relative;
+      display: flex;
+      & span {
+        color: @lightgrey;
+        font-size: 23px;
+        font-weight: 100;
+        margin-left: 1em;
+
+      }
+      //&:after {
+      //  position: absolute;
+      //  content: '/';
+      //  color: @lightgrey;
+      //  font-size: 37px;
+      //  font-weight: 100;
+      //  right: -40%;
+      //  bottom: -50%;
+      //}
+      //&:last-child:after {
+      //  content: none;
+      //}
+    }
+    &--active {
+      color: @black;
+    }
+  }
+  &__isotope {
+    &--el {
+      margin-bottom: 3.6%;
+      &:nth-child(7) {
+        margin-bottom: 0;
+      }
+      &:nth-child(10) {
+        margin-bottom: 0;
+      }
+      &:hover {
+        cursor: zoom-in;
+      }
+    }
+    &--empty {
+      color: transparent;
+      font-size: 45px;
+    }
+    &--button {
+      display: flex;
+      justify-content: center;
+    }
+    &--append {
+      border: none;
+      border-radius: 2px;
+      background-color: @lightgrey;
+      height: 30px;
+      color: @white;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 70px;
+      width: 75%;
+      &:hover {
+        background-color: @grey;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
