@@ -20,7 +20,7 @@
 
     $('.header__navigation--search').click(function () {
         $('.header__navigation--link').toggleClass('hide');
-        $('.header__search').toggleClass('show__menu');
+        $('.header__search, .header__navigation--input').toggleClass('show__menu');
     });
 
     $('#main').load('home.html');
