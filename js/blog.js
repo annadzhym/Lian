@@ -1,6 +1,13 @@
 'use strict';
 (function ($) {
     $(document).ready(function () {
+        $('.blog__post--img').hover(
+            function () {
+           $(this).siblings('div.post__info').hide();
+        }, function () {
+                $(this).siblings('div.post__info').show();
+            });
+
         $('.blog__singlepost').hide();
         $('.blog__post--img').click(function () {
             $('.blog__content').hide();
