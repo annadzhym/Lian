@@ -77,7 +77,7 @@
     //       })
     //   })
     // });
-
+;
     $('.details__navigation--buttons').click(function () {
         $.ajax({
             url: './data/portfolio.json',
