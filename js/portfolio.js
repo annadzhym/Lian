@@ -78,9 +78,10 @@
     //   })
     // });
 ;
-    $('.details__navigation--buttons').click(function () {
+    $('.js-next').click(function () {
         $.ajax({
             url: './data/portfolio.json',
+            dataType: "json"
         }).done(function (response) {
             for (var i = 0; i < response.length; i++) {
                 $('.details__info--title').text(response[i].name);
@@ -90,6 +91,19 @@
                 $('.js-role').text(response[i].role);
                 $('.js-tags').text(response[i].tags);
             }
+        })
+    });
+    $('.js-prev').click(function () {
+        $.ajax({
+            url: './data/portfolio.json',
+            dataType: "json"
+        }).done(function (response) {
+                $('.details__info--title').text(response[2].name);
+                $('.details__info--filter').text(response[2].branding);
+                $('.details__info--date').text(response[2].date);
+                $('.details__info--likeAmount').text(response[2].likes);
+                $('.js-role').text(response[2].role);
+                $('.js-tags').text(response[2].tags);
         })
     });
 
