@@ -54,6 +54,8 @@
             var comment = showComment();
             alert('Please wait, your comment is publishing...');
             comment.appendTo('.js-comment__append');
+            var inputArea =  $('.single__fieldset--elements');
+            inputArea.val('');
         });
     });
 
