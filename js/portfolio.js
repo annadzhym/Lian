@@ -3,6 +3,19 @@
 
     // ISOTOPE
     $(document).ready(function () {
+        function show404() {
+            function open() {
+                $('.dialog').fadeIn('fast');
+            }
+            function close() {
+                $('.dialog').fadeOut('slow');
+            }
+            $('.error').click(open);
+            $('.dialog__close, .dialog__submit').click(close);
+        };
+        show404();
+
+
         function showDetails() {
             $('.portfolio__details').hide();
             $('.portfolio__isotope--el').click(function () {

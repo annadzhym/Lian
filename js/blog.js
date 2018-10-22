@@ -3,9 +3,9 @@
     $(document).ready(function () {
         $('.blog__post--img').hover(
             function () {
-           $(this).siblings('div.post__info').hide();
-        }, function () {
-                $(this).siblings('div.post__info').show();
+                $(this).siblings('div.post__info').fadeOut();
+                }, function () {
+                $(this).siblings('div.post__info').fadeIn();
             });
 
         $('.blog__singlepost').hide();
@@ -31,6 +31,17 @@
         $('.blog__aside--heading').click(function (e) {
             e.preventDefault();
         });
+        function show404() {
+            function open() {
+                $('.dialog').fadeIn('fast');
+            }
+            function close() {
+                $('.dialog').fadeOut('slow');
+            }
+            $('.error').click(open);
+            $('.dialog__close, .dialog__submit').click(close);
+        };
+        show404();
 
 
 
@@ -52,7 +63,6 @@
         };
         $('.single__fieldset--button').click(function () {
             var comment = showComment();
-            alert('Please wait, your comment is publishing...');
             comment.appendTo('.js-comment__append');
             var inputArea =  $('.single__fieldset--elements');
             inputArea.val('');

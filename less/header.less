@@ -1,5 +1,5 @@
 .header {
-  height: 17vh;
+  height: 118px;
   z-index: 2;
   background-color: @white;
   margin-bottom: 0.1%;
@@ -41,6 +41,9 @@
     }
     &--input {
       display: none;
+      &:focus {
+        outline: none;
+      }
     }
     &--menu {
       display: none;
@@ -69,10 +72,18 @@
 }
 
 @media screen and (max-width: 991px) {
+  .header {
+    height: 75px;
+  }
   .header__navigation, .header__search {
     display: none;
   }
   .header__navigation--menu {
     display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .page__link {
+    display: none;
   }
 }

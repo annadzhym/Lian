@@ -1,6 +1,12 @@
 'use strict';
 (function ($) {
     $(document).ready(function () {
+        $('.contact__form--button').click(function () {
+
+        });
+        // var inputArea = $('.contact__form--inputs');
+        // inputArea.val('');
+
         // MAP
         var elMap = $('.contact__map')[0];
         var place = {lat: 40.6722643, lng: -73.8350836};

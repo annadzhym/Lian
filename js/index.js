@@ -1,6 +1,6 @@
 'use strict';
 (function ($) {
-    // console.log('The script for INDEX page was loaded!');
+
     window.onscroll = function() {makeHeader()};
 
     var header = document.querySelector("header");
@@ -21,18 +21,38 @@
     $('.header__navigation--search').click(function () {
         $('.header__navigation--link').toggleClass('hide');
         $('.header__search, .header__navigation--input').toggleClass('show__menu');
+        $('.header__navigation--input').focus();
+        $('.header__navigation--results').toggleClass('hide');
+        $(document).keyup(function(e) {
+            if ($('.header__navigation--link').hasClass('hide') && e.keyCode === 27) {
+                $('.header__search, .header__navigation--input').removeClass('show__menu');
+                $('.header__navigation--link').removeClass('hide');
+                var inputArea =  $('.header__navigation--input');
+                inputArea.val('');
+                $('.header__navigation--results').toggleClass('hide');
+                console.log('The search form was hidden by pressing Esc');
+            }
+        });
     });
+
 
     $('#main').load('home.html');
 
     $('.header__navigation--link').click(function (e) {
         e.preventDefault();
-
         var valueLink = $(this).attr('href');
         $('#main').load(valueLink);
         $('.header__navigation--link').removeClass('header__navigation--active');
         this.classList.add('header__navigation--active');
     });
+
+    // $('.error__link').click(function (e) {
+    //     e.preventDefault();
+    //     var value = $(this).attr('href');
+    //     $('#main').load(value);
+    // });
+
+
 
 
     function search() {
@@ -67,12 +87,6 @@
                         $('span.found').each(function(i){
                             var i = 0;
                             $(this).attr('n', i++);
-                        });
-                        $('span.found').not(':last').attr({title: 'Click here to go to the next found element'}).click(function() {
-                            $('body, html').animate({scrollTop: $('span.found:gt('+$(this).attr('n')+'):first').offset().top-paddingTop}, scrollSpeed);
-                        });
-                        $('span.found:last').attr({title: 'Click here to go to the search form'}).click(function(){
-                            $('body, html').animate({scrollTop: $('.header__navigation--input').offset().top-paddingTop}, scrollSpeed);
                         });
                     }
                 });
