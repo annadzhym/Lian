@@ -1,20 +1,17 @@
+@import "../utils/mixins";
 .contact {
   padding: 6% 0;
   &__heading {
     background: url("../img/contact/bg.jpg") no-repeat 50%;
   }
   &__info {
+    .flex-column-between;
     text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding-bottom: 6%;
     &--title {
+      .uppercase-300-line24;
       color:  @black;
       font-size: 30px;
-      font-weight: 300;
-      line-height: 24px;
-      text-transform: uppercase;
       letter-spacing: 11px;
     }
     &--slogan {
@@ -122,10 +119,8 @@
       text-align: center;
     }
     &--title {
-      text-transform: uppercase;
+      .uppercase-300-line24;
       font-size: 30px;
-      font-weight: 300;
-      line-height: 24px;
       margin-bottom: 4.5%;
     }
     &--text {
@@ -135,9 +130,7 @@
       line-height: 30px;
     }
     &--flex {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      .flex-column-between;
       padding-top: 5%;
     }
     &--info {
@@ -145,11 +138,9 @@
       padding: 4% 0 0;
     }
     &--name {
-      text-transform: uppercase;
+      .uppercase-300-line24;
       color:  #000000;
       font-size: 18px;
-      font-weight: 300;
-      line-height: 24px;
       margin-bottom: 7%;
     }
     &--description {

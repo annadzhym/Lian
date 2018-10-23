@@ -1,21 +1,8 @@
-.home{
-  &__carousel {
-    &--slider {
-      position: relative;
-      height: 80vh;
-      outline: none;
-    }
-    &--slider1 {
-      background: url("../img/home/slider_1_bg.jpg") no-repeat 100%;
-      background-size: cover;
-    }
-    &--slider2 {
-      background: url("../img/home/slider_2_bg.jpg") no-repeat 100%;
-      background-size: cover;
-    }
-    &--slider3 {
-      background: @grey;
-    }
+@import "../utils/mixins";
+.portfolio {
+  padding: 5.5% 0;
+  &__heading {
+    background: url("../img/portfolio/bg.jpg") no-repeat 100%;
   }
   &__filtration {
     border-top: 1px solid @lightgrey;
@@ -28,13 +15,12 @@
     align-items: center;
     height: 10vh;
     &--button {
+      .no-border-outline;
       color: @grey;
       font-size: 14px;
       line-height: 30px;
       font-weight: 700;
       text-transform: uppercase;
-      border: none;
-      outline: none;
       background-color: transparent;
       position: relative;
       display: flex;
@@ -45,18 +31,6 @@
         margin-left: 1em;
 
       }
-      //&:after {
-      //  position: absolute;
-      //  content: '/';
-      //  color: @lightgrey;
-      //  font-size: 37px;
-      //  font-weight: 100;
-      //  right: -40%;
-      //  bottom: -50%;
-      //}
-      //&:last-child:after {
-      //  content: none;
-      //}
     }
     &--active {
       color: @black;
@@ -72,7 +46,7 @@
         margin-bottom: 0;
       }
       &:hover {
-        cursor: zoom-in;
+        cursor: pointer;
       }
     }
     &--empty {

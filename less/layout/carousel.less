@@ -1,11 +1,9 @@
+@import "../utils/mixins";
 .carousel {
   &__text {
     text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .flex-column-center-center;
     height: 100%;
-    justify-content: center;
     letter-spacing: 3px;
     font-weight: 300;
     &--title {

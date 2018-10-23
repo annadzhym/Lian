@@ -1,3 +1,4 @@
+@import "../utils/mixins";
 .blog {
   &__content {
     padding: 5% 0;
@@ -19,13 +20,8 @@
     }
   }
   &__mask {
-    position: absolute;
+    .absolute-mask;
     background: @black;
-    opacity: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
     color: white;
     padding: 40px;
     &:hover {
@@ -33,17 +29,14 @@
     }
   }
   &__search {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    .inline-center-center;
     background-color: @white;
     height: 60px;
     margin-bottom: 5%;
     &--input {
+      .no-border-outline;
       width: 89%;
       height: 32px;
-      border: none;
-      outline: none;
       padding: 1px 3px;
       background: transparent;
       &::placeholder {
@@ -53,12 +46,11 @@
       }
     }
     &--button {
+      .no-border-outline;
       width: 10%;
       height: 34px;
       border-radius: 2px;
-      border: none;
       background-color:  #999999;
-      outline: none;
       color: white;
     }
   }
@@ -67,15 +59,13 @@
     padding: 0;
     background: @white;
     &--titles {
+      .uppercase-300-line24;
       background-color: #ebebeb;
       text-align: center;
       position: relative;
       color:  #000000;
       font-size: 18px;
-      font-weight: 300;
-      line-height: 24px;
       padding: 10px 0;
-      text-transform: uppercase;
       letter-spacing: 5px;
       &:after {
         position: absolute;
@@ -97,9 +87,7 @@
       }
     }
     &--info {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      .flex-column-between;
       margin-left: 5%;
     }
     &--heading {

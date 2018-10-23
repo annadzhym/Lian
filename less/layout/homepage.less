@@ -1,7 +1,22 @@
-.portfolio {
-  padding: 5.5% 0;
-  &__heading {
-    background: url("../img/portfolio/bg.jpg") no-repeat 100%;
+@import "../utils/mixins";
+.home{
+  &__carousel {
+    &--slider {
+      position: relative;
+      height: 80vh;
+      outline: none;
+    }
+    &--slider1 {
+      background: url('../img/home/slider_1_bg.jpg') no-repeat 100%;
+      background-size: cover;
+    }
+    &--slider2 {
+      background: url("../img/home/slider_2_bg.jpg") no-repeat 100%;
+      background-size: cover;
+    }
+    &--slider3 {
+      background: @grey;
+    }
   }
   &__filtration {
     border-top: 1px solid @lightgrey;
@@ -14,13 +29,12 @@
     align-items: center;
     height: 10vh;
     &--button {
+      .no-border-outline;
       color: @grey;
       font-size: 14px;
       line-height: 30px;
       font-weight: 700;
       text-transform: uppercase;
-      border: none;
-      outline: none;
       background-color: transparent;
       position: relative;
       display: flex;
@@ -46,7 +60,7 @@
         margin-bottom: 0;
       }
       &:hover {
-        cursor: pointer;
+        cursor: zoom-in;
       }
     }
     &--empty {
@@ -78,9 +92,3 @@
     }
   }
 }
-
-//@media screen and (max-width: 991px) {
-//  .portfolio__isotope--el img{
-//    width: 100%;
-//  }
-//}
