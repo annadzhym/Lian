@@ -1,11 +1,39 @@
 'use strict';
 (function ($) {
     $(document).ready(function () {
-        $('.contact__form--button').click(function () {
+        //Clear fields function
+        function clearAll() {
+            $('.js-name').val('');
+            $('.js-email').val('');
+            $('.js-message').val('');
+            // var inputArea =  $('.contact__form--inputs');
+            // inputArea.val('');
+        }
 
+//Store Data
+        $(".js-button").click(function(e) {
+            var name = $('.js-name').val();
+            var email = $('.js-email').val();
+            var message = $('.js-message').val();
+
+            //Check if Key or Value is empty
+            if ($.trim(name) == '' || $.trim(email) == ''|| $.trim(message) == '') {
+                $('.js-notice').text('Please fill the form');
+            }
+
+            //If not empty then store data
+            else {
+                localStorage.setItem('Author', name);
+                localStorage.setItem('Address', email);
+                localStorage.setItem('Message', message);
+                clearAll();
+                $('.js-notice').text(
+                    'Data saved. ' + name +
+                    ' thank you for your message. We will contact you via address '
+                    + email + ' as soon as possible.'
+                );
+            }
         });
-        // var inputArea = $('.contact__form--inputs');
-        // inputArea.val('');
 
         // MAP
         var elMap = $('.contact__map')[0];

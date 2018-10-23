@@ -61,11 +61,36 @@
                 ' </div>');
             return comment;
         };
-        $('.single__fieldset--button').click(function () {
-            var comment = showComment();
-            comment.appendTo('.js-comment__append');
-            var inputArea =  $('.single__fieldset--elements');
-            inputArea.val('');
+
+        //Clear fields function
+        function clearAll() {
+            $('.single__fieldset--elements').val('');
+        }
+
+//Store Data
+        $('.js-comment-button').click(function() {
+            var author = $('.js-comment__author').val();
+            var email = $('.js-comment__email').val();
+            var website = $('.js-comment__website').val();
+            var message = $('.js-comment__message').val();
+
+            //Check if Key or Value is empty
+            if ($.trim(author) == '' || $.trim(email) == ''|| $.trim(website) == '' || $.trim(message) == '') {
+                $('.js-comment-notice').text('Please fill the form');
+            }
+
+            //If not empty then store data
+            else {
+                var comment = showComment();
+                comment.appendTo('.js-comment__append');
+                localStorage.setItem('CommentAuthor', author);
+                localStorage.setItem('CommentEmail', email);
+                localStorage.setItem('CommentWebsite', website);
+                localStorage.setItem('CommentMessage', message);
+                clearAll();
+                $('.js-comment-notice').text(author + ' your comment is very important for us.'
+                );
+            }
         });
     });
 

@@ -15,7 +15,8 @@
     };
 
     $('.header__navigation--menu').click(function () {
-        $('.header__navigation--mobile').toggleClass('show__menu')
+        $(this).toggleClass('mobile-menu-up');
+        $('.header__navigation--mobile').toggleClass('show__menu mobile-menu-up');
     });
 
     $('.header__navigation--search').click(function () {

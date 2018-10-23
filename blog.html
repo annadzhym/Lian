@@ -113,16 +113,6 @@
                                 <!--</div>-->
                             <!--</div>-->
                         </div>
-                        <div class="dialog">
-                            <button class="dialog__close">&times</button>
-                            <div class="dialog__container">
-                                <h1 class="dialog__container--number">404</h1>
-                                <h2 class="dialog__container--explanation">page not found</h2>
-                                <div>
-                                    <button class="dialog__submit">ok</button>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-xs-6 col-md-6 blog__post">
                             <div  class="blog__post--img"><img src="img/blog/2.png">
                                 <div class="blog__mask">
@@ -189,6 +179,16 @@
                         </div>
                     </div>
                     <aside class="col-xs-12 col-md-4">
+                        <div class="dialog">
+                            <button class="dialog__close">&times</button>
+                            <div class="dialog__container">
+                                <h1 class="dialog__container--number">404</h1>
+                                <h2 class="dialog__container--explanation">page not found</h2>
+                                <div>
+                                    <button class="dialog__submit">ok</button>
+                                </div>
+                            </div>
+                        </div>
                         <form class="col-xs-12 col-md-12 blog__search" action="" method="get">
                             <input class="blog__search--input" type="text" name="search" placeholder="Search">
                             <button class="blog__search--button"><i class="fa fa-search"></i></button>
@@ -328,8 +328,9 @@
                         </div>
                         <textarea required name="comment__message" class="col-xs-12 col-md-12 single__fieldset--elements single__fieldset--message js-comment__message" placeholder="Message"></textarea>
                         <div class="col-xs-12 col-md-4 col-md-offset-4 single__fieldset--submit">
-                            <input type="submit" name="comment__submit" class="single__fieldset--button" value="send message">
+                            <input type="submit" name="comment__submit" class="single__fieldset--button js-comment-button" value="send message">
                         </div>
+                        <div class="js-comment-notice"></div>
                     </form>
                 </fieldset>
             </div>

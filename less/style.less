@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:700|Roboto:100,300,400,700');
 @import (inline)url(../css/additional/reset.css);
 @import "mixins";
-@import "page";
 @import "header";
 @import "headings";
 @import "homepage";
@@ -76,6 +75,9 @@ img {
 .hide {
   display: none;
 }
+.mobile-menu-up {
+  margin-top: -16%;
+}
 
 span.found {
   background-color: darkviolet;
@@ -85,4 +87,9 @@ span.found {
 span.next {
   color: darkred;
   cursor: pointer;
+}
+@media screen and (max-width: 991px) {
+  p {
+    font-size: 22px;
+  }
 }
