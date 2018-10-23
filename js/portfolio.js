@@ -83,14 +83,6 @@
         });
     });
 
-    // $('.details__navigation--buttons').click(function(){
-    //   $.getJSON('./data/portfolio.json', function(result) {
-    //       $each(result, function (index, item) {
-    //           $('.details__info--title').innerHTML(portfolio.item.name);
-    //       })
-    //   })
-    // });
-;
     $('.js-next').click(function () {
         $.ajax({
             url: './data/portfolio.json',

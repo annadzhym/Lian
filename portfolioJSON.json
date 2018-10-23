@@ -1,0 +1,159 @@
+[
+  {
+    "id": "0",
+    "image": "img/home/img6.png",
+    "name": "PEREIRA CREATIVE AGENCY",
+    "branding": "branding Design",
+    "date": "February 28, 2018",
+    "likes": "324",
+    "role": "Project Designer, Lead Designer, Markerting Head",
+    "tags": "Mobile App, UI/UX design",
+    "text": "Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te,in qui delenit nostrum. Nam ad labores.",
+    "link": " More",
+    "class": [
+      "logo",
+      "all"
+    ]
+  }, {
+  "id": "1",
+  "image": "img/home/img2.png",
+  "name": "PEREIRA CREATIVE AGENCY",
+  "branding": "branding Design",
+  "date": "April 16, 2015",
+  "likes": "399",
+  "role": "Markerting Head",
+  "tags" : "UI/UX design",
+  "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.",
+  "link": " More",
+  "class": [
+    "all",
+    "ui"
+  ]
+},{
+  "id": "2",
+  "image": "img/home/img8.png",
+  "name": "Lian CREATIVE AGENCY",
+  "branding": " UI/UX design",
+  "date": "October 5, 2018",
+  "likes": "637",
+  "role": "Project Designer",
+  "tags" : "Mobile App",
+  "text": "Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te,in qui delenit nostrum. Nam ad labores.",
+  "link": " More",
+  "class": [
+    "mobile-app",
+    "all"
+  ]
+},
+  {
+    "id": "3",
+    "image": "img/home/img9.png",
+    "name": "Albert CREATIVE AGENCY",
+    "branding": "Mobile App",
+    "date": "June 14, 2017",
+    "likes": "398",
+    "role": "Markerting Head",
+    "tags" : "Webdesign",
+    "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.",
+    "link": " More",
+    "class": [
+      "all",
+      "wordpress"
+    ]
+  },  {
+  "id": "4",
+  "image": "img/home/img5.png",
+  "name": "lian CREATIVE AGENCY",
+  "branding": "branding Design",
+  "date": "March 8, 2018",
+  "likes": "518",
+  "role": "Lead Designer",
+  "tags" : "Mobile App",
+  "text": "Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te,in qui delenit nostrum. Nam ad labores.",
+  "link": " More",
+  "class": [
+    "all",
+    "webdesign"
+  ]
+}, {
+  "id": "5",
+  "image": "img/home/img1.png",
+  "name": "albert CREATIVE AGENCY",
+  "branding": "branding Design",
+  "date": "February 12, 2016",
+  "likes": "521",
+  "role": "Project Designer, Lead Designer, Markerting Head",
+  "tags" : "web",
+  "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.",
+  "link": " More",
+  "class": [
+    "all",
+    "branding"
+  ]
+},
+  {
+    "id": "6",
+    "image": "img/home/img10.png",
+    "name": "lian CREATIVE AGENCY",
+    "branding": "web",
+    "date": "March 8, 2018",
+    "likes": "518",
+    "role": "Lead Designer",
+    "tags" : "Mobile App",
+    "text": "Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te,in qui delenit nostrum. Nam ad labores.",
+    "link": " More",
+    "class": [
+      "all",
+      "logo"
+    ]
+  },
+  {
+    "id": "7",
+    "image": "img/home/img7.png",
+    "images": "img/home/img.png",
+    "name": "PEREIRA CREATIVE AGENCY",
+    "branding": "Design",
+    "date": "November 1, 2018",
+    "likes": "458",
+    "role": "Project Designer, Lead Designer, Markerting Head",
+    "tags" : "Mobile",
+    "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.",
+    "link": " More",
+    "class": [
+      "mobile-app",
+      "all"
+    ]
+  },
+  {
+    "id": "8",
+    "image": "img/home/img8.png",
+    "name": "PEREIRA CREATIVE AGENCY",
+    "branding": "branding Design",
+    "date": "may 30, 2017",
+    "likes": "368",
+    "role": "Markerting Head",
+    "tags" : "logo",
+    "data": "June 15, 2012",
+    "text": "Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te,in qui delenit nostrum. Nam ad labores.",
+    "link": " More",
+    "class": [
+      "all",
+      "wordpress"
+    ]
+  },{
+  "id": "9",
+  "image": "img/home/img3.png",
+  "name": "Lian CREATIVE AGENCY",
+  "branding": " wordpress",
+  "date": "september 12, 2018",
+  "likes": "425",
+  "role": "Project Designer",
+  "tags" : "web",
+  "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.",
+  "link": " More",
+  "class": [
+    "all",
+    "webdesign"
+  ]
+}
+]
