@@ -59,17 +59,13 @@
     function search() {
         $(document).ready(function(){
             var minLength = 3;
-            var paddingTop = 30;
-            var scrollSpeed = 200;
             var keyInterval = 1000;
             var term = '';
             var n = 0;
             var timeKeyup = 0;
             var timeSearch = 0;
 
-            $('body').on('click', '#goNext', function(){
-                $('body, html').animate({scrollTop: $('span.found:first').offset().top-paddingTop}, scrollSpeed);
-            });
+
             function doSearch() {
                 term = $('.header__navigation--input').val();
                 $('span.found').each(function(){
@@ -81,9 +77,9 @@
                     n = $('span.found').length;
                     console.log('n = '+ n);
                     if (n === 0)
-                        $('.header__navigation--results').html('Nothing found');
+                        $('.header__navigation--results').text('Nothing found');
                     else
-                        $('.header__navigation--results').html('Results found: '+ n +'. <span class="next" id="goNext">Go to</span>');
+                        $('.header__navigation--results').text('Results found: '+ n +'.');
                     if (n > 1) {
                         $('span.found').each(function(i){
                             var i = 0;
@@ -96,7 +92,7 @@
             $('.header__navigation--input').keyup(function(){
                 var d1 = new Date();
                 timeKeyup = d1.getTime();
-                if ($('.header__navigation--input').val()!= term)
+                if ($('.header__navigation--input').val()!== term)
                     if ($('.header__navigation--input').val().length >= minLength) {
                         setTimeout(function(){
                             var d2 = new Date();
@@ -104,8 +100,9 @@
                             if (timeSearch - timeKeyup >= keyInterval)
                                 doSearch();
                         }, keyInterval);
-                    } else
-                        $('.header__navigation--results').html('&nbsp');
+                    } else {
+                        $('.header__navigation--results').text(' ');
+                    }
             });
 
             // if (window.location.hash != '') {
