@@ -36,21 +36,21 @@
             $(this).addClass('home__group--active');
         });
         function getItemElement() {
-            var $item = $('<div class="home__isotope--el wordpress" ' +
+            var $item = $('<div class="col-xs-3 home__isotope--el wordpress" ' +
                 'data-big="./img/home/img6.png"><img src="./img/home/img6.png">' +
                 '<div class="mask"><span class="mask__zoom">+</span>\n' +
                 '</div></div>');
             return $item;
         };
         function getItemElement1() {
-            var $item1 = $('<div class="home__isotope--el mobile-app" ' +
+            var $item1 = $('<div class="col-xs-3 home__isotope--el mobile-app" ' +
                 'data-big="./img/home/img4.png"><img src="./img/home/img4.png"><div class="mask">\n' +
                 '<span class="mask__zoom">+</span>\n' +
                 '</div></div>');
             return $item1;
         };
         function getItemElement2() {
-            var $item2 = $('<div class="home__isotope--el webdesign" ' +
+            var $item2 = $('<div class="col-xs-3 home__isotope--el webdesign" ' +
                 'data-big="./img/home/img2.png"><img src="./img/home/img2.png"><div class="mask">\n' +
                 '<span class="mask__zoom">+</span>\n' +
                 '</div></div>');
