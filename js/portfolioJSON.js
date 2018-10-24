@@ -44,7 +44,7 @@
                 while (counter < number && response[startItem]) {
                     counter++;
                     var string =
-                        '<div class="col-md-4 portfolio__isotope--el ' + response[startItem].class.join(' ') + ' ' + '">\n' +
+                        '<div class="col-xs-4 col-md-4 portfolio__isotope--el ' + response[startItem].class.join(' ') + ' ' + '">\n' +
                         '<img src="' + response[startItem].image + ' ' + '">\n' +
                         '<a href="#" onclick="moreInfo(' + response[startItem].id + ')">\n' +
                         '<div class="mask">\n' +
@@ -130,10 +130,10 @@ function moreInfo(workId) {
                     '</div>\n' +
                     '<div class="col-xs-12 col-md-6 details__info">\n' +
                     '<img class="col-xs-12 col-md-12 details__img--main js-img" alt="img" src="' + work.image + ' ' + '">\n' +
-                    '<img class="col-xs-4 col-md-3" alt="img" src="' + work.image + ' ' + '">\n' +
-                    '<img class="col-xs-4 col-md-3" alt="img" src="' + work.image + ' ' + '">\n' +
-                    '<img class="col-xs-4 col-md-3" alt="img" src="' + work.image + ' ' + '">\n' +
-                    '<img class="col-xs-4 col-md-3" alt="img" src="' + work.image + ' ' + '">\n' +
+                    '<img class="col-xs-3 col-md-3" alt="img" src="' + work.image + ' ' + '">\n' +
+                    '<img class="col-xs-3 col-md-3" alt="img" src="' + work.image + ' ' + '">\n' +
+                    '<img class="col-xs-3 col-md-3" alt="img" src="' + work.image + ' ' + '">\n' +
+                    '<img class="col-xs-3 col-md-3" alt="img" src="' + work.image + ' ' + '">\n' +
                     '</div>\n' +
                     '</div>';
 

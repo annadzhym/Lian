@@ -88,7 +88,7 @@
                 localStorage.setItem('CommentWebsite', website);
                 localStorage.setItem('CommentMessage', message);
                 clearAll();
-                $('.js-comment-notice').text(author + ' your comment is very important for us.'
+                $('.js-comment-notice').text(author.charAt(0).toUpperCase() + author.slice(1) + ', your comment is very important for us.'
                 );
             }
         });
